@@ -26,11 +26,9 @@ class _MyHomePage2State extends State<MyHomePage2> {
         }
         return productData;
       } else {
-        throw Exception(
-            'Failed to fetch data'); // You can throw a specific exception here.
+        throw Exception('Failed to fetch data');
       }
     } catch (e) {
-      // Handle the exception here, e.g., log the error or return an error message.
       print('Error: $e');
       return [];
     }
